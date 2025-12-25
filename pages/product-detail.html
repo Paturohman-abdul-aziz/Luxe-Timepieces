@@ -1,0 +1,567 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title id="product-title">Detail Produk - Luxe Timepieces</title>
+    <meta name="description" content="Detail lengkap jam tangan premium dengan spesifikasi, fitur, dan harga terbaik">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <link rel="stylesheet" href="../assets/css/animations.css">
+    <link rel="stylesheet" href="../assets/css/product-detail.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <a href="../index.html">
+                    <img src="../assets/logo.png" alt="Luxe Timepieces" class="logo-img">
+                    <span class="logo-text">Luxe Timepieces</span>
+                </a>
+            </div>
+            
+            <ul class="nav-menu" id="nav-menu">
+                <li><a href="../index.html#home" class="nav-link">Beranda</a></li>
+                <li><a href="../index.html#collections" class="nav-link">Koleksi</a></li>
+                <li><a href="../index.html#about" class="nav-link">Tentang</a></li>
+                <li><a href="../index.html#services" class="nav-link">Layanan</a></li>
+                <li><a href="../index.html#contact" class="nav-link">Kontak</a></li>
+            </ul>
+            
+            <div class="nav-actions">
+                <button class="search-btn" id="search-btn">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <circle cx="11" cy="11" r="8"></circle>
+                        <path d="m21 21-4.35-4.35"></path>
+                    </svg>
+                </button>
+                <button class="cart-btn" id="cart-btn">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"></path>
+                        <line x1="3" y1="6" x2="21" y2="6"></line>
+                        <path d="M16 10a4 4 0 0 1-8 0"></path>
+                    </svg>
+                    <span class="cart-count">0</span>
+                </button>
+            </div>
+            
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Breadcrumb -->
+    <section class="breadcrumb">
+        <div class="container">
+            <nav class="breadcrumb-nav">
+                <a href="../index.html">Beranda</a>
+                <span class="separator">›</span>
+                <a href="../index.html#collections">Koleksi</a>
+                <span class="separator">›</span>
+                <span id="breadcrumb-product">Detail Produk</span>
+            </nav>
+        </div>
+    </section>
+
+    <!-- Product Detail -->
+    <section class="product-detail">
+        <div class="container">
+            <div class="product-content">
+                <div class="product-gallery">
+                    <div class="main-image">
+                        <img id="main-product-image" src="../assets/images/watch-1.jpg" alt="Product Image">
+                        <div class="image-zoom-overlay"></div>
+                    </div>
+                    <div class="thumbnail-gallery">
+                        <div class="thumbnail active" data-image="../assets/images/watch-1.jpg">
+                            <img src="../assets/images/watch-1.jpg" alt="View 1">
+                        </div>
+                        <div class="thumbnail" data-image="../assets/images/watch-1-side.jpg">
+                            <img src="../assets/images/watch-1-side.jpg" alt="View 2">
+                        </div>
+                        <div class="thumbnail" data-image="../assets/images/watch-1-back.jpg">
+                            <img src="../assets/images/watch-1-back.jpg" alt="View 3">
+                        </div>
+                        <div class="thumbnail" data-image="../assets/images/watch-1-detail.jpg">
+                            <img src="../assets/images/watch-1-detail.jpg" alt="View 4">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product-info">
+                    <div class="product-header">
+                        <h1 id="product-name">Classic Heritage</h1>
+                        <div class="product-rating">
+                            <div class="stars">
+                                <span class="star filled">★</span>
+                                <span class="star filled">★</span>
+                                <span class="star filled">★</span>
+                                <span class="star filled">★</span>
+                                <span class="star filled">★</span>
+                            </div>
+                            <span class="rating-score">(4.8)</span>
+                            <span class="review-count">127 ulasan</span>
+                        </div>
+                    </div>
+
+                    <div class="product-price">
+                        <span class="current-price" id="product-price">Rp 15.000.000</span>
+                        <span class="original-price">Rp 18.000.000</span>
+                        <span class="discount-badge">17% OFF</span>
+                    </div>
+
+                    <div class="product-description">
+                        <p id="product-desc">Jam tangan Classic Heritage menggabungkan keanggunan tradisional dengan teknologi modern. Dibuat dengan material premium dan keahlian tangan yang telah teruji selama puluhan tahun.</p>
+                    </div>
+
+                    <div class="product-features">
+                        <h3>Spesifikasi:</h3>
+                        <ul id="product-specs">
+                            <li><strong>Movement:</strong> Swiss Automatic</li>
+                            <li><strong>Case Material:</strong> Stainless Steel 316L</li>
+                            <li><strong>Crystal:</strong> Sapphire Crystal</li>
+                            <li><strong>Water Resistance:</strong> 100m</li>
+                            <li><strong>Diameter:</strong> 42mm</li>
+                            <li><strong>Thickness:</strong> 12mm</li>
+                            <li><strong>Strap:</strong> Genuine Leather</li>
+                            <li><strong>Warranty:</strong> 2 Years International</li>
+                        </ul>
+                    </div>
+
+                    <div class="product-options">
+                        <div class="option-group">
+                            <label>Warna Strap:</label>
+                            <div class="color-options">
+                                <div class="color-option active" data-color="black" style="background: #000"></div>
+                                <div class="color-option" data-color="brown" style="background: #8B4513"></div>
+                                <div class="color-option" data-color="navy" style="background: #000080"></div>
+                            </div>
+                        </div>
+
+                        <div class="option-group">
+                            <label>Ukuran:</label>
+                            <div class="size-options">
+                                <div class="size-option" data-size="40mm">40mm</div>
+                                <div class="size-option active" data-size="42mm">42mm</div>
+                                <div class="size-option" data-size="44mm">44mm</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="quantity-selector">
+                        <label>Jumlah:</label>
+                        <div class="quantity-controls">
+                            <button class="qty-btn minus" id="qty-minus">-</button>
+                            <input type="number" id="quantity" value="1" min="1" max="5">
+                            <button class="qty-btn plus" id="qty-plus">+</button>
+                        </div>
+                        <span class="stock-info">Stok: <span id="stock-count">8</span> tersisa</span>
+                    </div>
+
+                    <div class="product-actions">
+                        <button class="btn btn-primary add-to-cart" id="add-to-cart">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"></path>
+                                <line x1="3" y1="6" x2="21" y2="6"></line>
+                                <path d="M16 10a4 4 0 0 1-8 0"></path>
+                            </svg>
+                            Tambah ke Keranjang
+                        </button>
+                        <button class="btn btn-secondary buy-now" id="buy-now">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M3 3h2l.4 2M7 13h10l4-8H5.4m0 0L7 13m0 0l-2.5 5M7 13l2.5 5m6-5v6a2 2 0 0 1-2 2H9a2 2 0 0 1-2-2v-6"></path>
+                            </svg>
+                            Beli Sekarang
+                        </button>
+                        <button class="btn btn-outline wishlist" id="wishlist">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path>
+                            </svg>
+                            Wishlist
+                        </button>
+                    </div>
+
+                    <div class="product-guarantee">
+                        <div class="guarantee-item">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+                            </svg>
+                            <div>
+                                <h4>Garansi Resmi</h4>
+                                <p>2 tahun garansi internasional</p>
+                            </div>
+                        </div>
+                        <div class="guarantee-item">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"></path>
+                            </svg>
+                            <div>
+                                <h4>Pengiriman Gratis</h4>
+                                <p>Gratis ongkir ke seluruh Indonesia</p>
+                            </div>
+                        </div>
+                        <div class="guarantee-item">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path>
+                            </svg>
+                            <div>
+                                <h4>Retur Mudah</h4>
+                                <p>30 hari kebijakan pengembalian</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Product Tabs -->
+    <section class="product-tabs">
+        <div class="container">
+            <div class="tabs-header">
+                <button class="tab-btn active" data-tab="description">Deskripsi</button>
+                <button class="tab-btn" data-tab="specifications">Spesifikasi</button>
+                <button class="tab-btn" data-tab="reviews">Ulasan (127)</button>
+                <button class="tab-btn" data-tab="shipping">Pengiriman</button>
+            </div>
+
+            <div class="tabs-content">
+                <div class="tab-panel active" id="description">
+                    <h3>Tentang Classic Heritage</h3>
+                    <p>Classic Heritage adalah perwujudan sempurna dari tradisi pembuatan jam tangan Swiss yang telah berusia ratusan tahun. Setiap detail dirancang dengan cermat untuk menciptakan timepiece yang tidak hanya akurat, tetapi juga menjadi statement fashion yang elegan.</p>
+                    
+                    <h4>Keunggulan Produk:</h4>
+                    <ul>
+                        <li>Movement Swiss Automatic yang presisi dan tahan lama</li>
+                        <li>Case dari Stainless Steel 316L yang anti karat</li>
+                        <li>Sapphire Crystal yang anti gores dan jernih</li>
+                        <li>Water resistance hingga 100 meter</li>
+                        <li>Strap kulit asli yang nyaman dan tahan lama</li>
+                        <li>Desain timeless yang cocok untuk segala acara</li>
+                    </ul>
+
+                    <h4>Cocok Untuk:</h4>
+                    <p>Profesional muda, eksekutif, dan siapa saja yang menghargai kualitas dan keanggunan dalam setiap detail. Jam tangan ini sempurna untuk acara formal, meeting bisnis, atau sebagai aksesori sehari-hari yang menunjukkan status dan selera tinggi.</p>
+                </div>
+
+                <div class="tab-panel" id="specifications">
+                    <div class="specs-grid">
+                        <div class="spec-category">
+                            <h4>Movement</h4>
+                            <div class="spec-item">
+                                <span class="spec-label">Jenis:</span>
+                                <span class="spec-value">Swiss Automatic</span>
+                            </div>
+                            <div class="spec-item">
+                                <span class="spec-label">Jewels:</span>
+                                <span class="spec-value">25 Jewels</span>
+                            </div>
+                            <div class="spec-item">
+                                <span class="spec-label">Power Reserve:</span>
+                                <span class="spec-value">42 Hours</span>
+                            </div>
+                        </div>
+
+                        <div class="spec-category">
+                            <h4>Case & Crystal</h4>
+                            <div class="spec-item">
+                                <span class="spec-label">Material:</span>
+                                <span class="spec-value">Stainless Steel 316L</span>
+                            </div>
+                            <div class="spec-item">
+                                <span class="spec-label">Diameter:</span>
+                                <span class="spec-value">42mm</span>
+                            </div>
+                            <div class="spec-item">
+                                <span class="spec-label">Thickness:</span>
+                                <span class="spec-value">12mm</span>
+                            </div>
+                            <div class="spec-item">
+                                <span class="spec-label">Crystal:</span>
+                                <span class="spec-value">Sapphire Crystal</span>
+                            </div>
+                        </div>
+
+                        <div class="spec-category">
+                            <h4>Strap & Buckle</h4>
+                            <div class="spec-item">
+                                <span class="spec-label">Material:</span>
+                                <span class="spec-value">Genuine Leather</span>
+                            </div>
+                            <div class="spec-item">
+                                <span class="spec-label">Width:</span>
+                                <span class="spec-value">22mm</span>
+                            </div>
+                            <div class="spec-item">
+                                <span class="spec-label">Buckle:</span>
+                                <span class="spec-value">Stainless Steel</span>
+                            </div>
+                        </div>
+
+                        <div class="spec-category">
+                            <h4>Features</h4>
+                            <div class="spec-item">
+                                <span class="spec-label">Water Resistance:</span>
+                                <span class="spec-value">100m (10 ATM)</span>
+                            </div>
+                            <div class="spec-item">
+                                <span class="spec-label">Functions:</span>
+                                <span class="spec-value">Hours, Minutes, Seconds, Date</span>
+                            </div>
+                            <div class="spec-item">
+                                <span class="spec-label">Warranty:</span>
+                                <span class="spec-value">2 Years International</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="tab-panel" id="reviews">
+                    <div class="reviews-summary">
+                        <div class="rating-overview">
+                            <div class="overall-rating">
+                                <span class="rating-number">4.8</span>
+                                <div class="rating-stars">
+                                    <span class="star filled">★</span>
+                                    <span class="star filled">★</span>
+                                    <span class="star filled">★</span>
+                                    <span class="star filled">★</span>
+                                    <span class="star filled">★</span>
+                                </div>
+                                <span class="total-reviews">127 ulasan</span>
+                            </div>
+                            <div class="rating-breakdown">
+                                <div class="rating-bar">
+                                    <span>5★</span>
+                                    <div class="bar"><div class="fill" style="width: 78%"></div></div>
+                                    <span>78%</span>
+                                </div>
+                                <div class="rating-bar">
+                                    <span>4★</span>
+                                    <div class="bar"><div class="fill" style="width: 15%"></div></div>
+                                    <span>15%</span>
+                                </div>
+                                <div class="rating-bar">
+                                    <span>3★</span>
+                                    <div class="bar"><div class="fill" style="width: 5%"></div></div>
+                                    <span>5%</span>
+                                </div>
+                                <div class="rating-bar">
+                                    <span>2★</span>
+                                    <div class="bar"><div class="fill" style="width: 1%"></div></div>
+                                    <span>1%</span>
+                                </div>
+                                <div class="rating-bar">
+                                    <span>1★</span>
+                                    <div class="bar"><div class="fill" style="width: 1%"></div></div>
+                                    <span>1%</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="reviews-list">
+                        <div class="review-item">
+                            <div class="reviewer-info">
+                                <div class="reviewer-avatar">A</div>
+                                <div class="reviewer-details">
+                                    <h5>Ahmad Rizki</h5>
+                                    <div class="review-rating">
+                                        <span class="star filled">★</span>
+                                        <span class="star filled">★</span>
+                                        <span class="star filled">★</span>
+                                        <span class="star filled">★</span>
+                                        <span class="star filled">★</span>
+                                    </div>
+                                    <span class="review-date">2 minggu yang lalu</span>
+                                </div>
+                            </div>
+                            <div class="review-content">
+                                <p>Jam tangan yang luar biasa! Kualitas premium dengan harga yang sepadan. Desainnya elegan dan cocok untuk acara formal maupun casual. Pengiriman cepat dan packaging sangat rapi.</p>
+                            </div>
+                        </div>
+
+                        <div class="review-item">
+                            <div class="reviewer-info">
+                                <div class="reviewer-avatar">S</div>
+                                <div class="reviewer-details">
+                                    <h5>Sari Indah</h5>
+                                    <div class="review-rating">
+                                        <span class="star filled">★</span>
+                                        <span class="star filled">★</span>
+                                        <span class="star filled">★</span>
+                                        <span class="star filled">★</span>
+                                        <span class="star filled">★</span>
+                                    </div>
+                                    <span class="review-date">1 bulan yang lalu</span>
+                                </div>
+                            </div>
+                            <div class="review-content">
+                                <p>Hadiah untuk suami yang sangat berkesan. Kualitas Swiss movement benar-benar terasa, akurasi waktu sangat presisi. Strap kulit juga nyaman dipakai seharian.</p>
+                            </div>
+                        </div>
+
+                        <div class="review-item">
+                            <div class="reviewer-info">
+                                <div class="reviewer-avatar">D</div>
+                                <div class="reviewer-details">
+                                    <h5>Doni Pratama</h5>
+                                    <div class="review-rating">
+                                        <span class="star filled">★</span>
+                                        <span class="star filled">★</span>
+                                        <span class="star filled">★</span>
+                                        <span class="star filled">★</span>
+                                        <span class="star">★</span>
+                                    </div>
+                                    <span class="review-date">1 bulan yang lalu</span>
+                                </div>
+                            </div>
+                            <div class="review-content">
+                                <p>Overall bagus, tapi sempat ada delay pengiriman. Tapi produknya memuaskan, sesuai ekspektasi. Customer service juga responsif membantu.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="tab-panel" id="shipping">
+                    <div class="shipping-info">
+                        <h3>Informasi Pengiriman</h3>
+                        
+                        <div class="shipping-options">
+                            <div class="shipping-option">
+                                <h4>🚚 Pengiriman Reguler (Gratis)</h4>
+                                <p>Estimasi: 3-5 hari kerja</p>
+                                <p>Tersedia untuk seluruh Indonesia</p>
+                            </div>
+                            
+                            <div class="shipping-option">
+                                <h4>⚡ Pengiriman Express</h4>
+                                <p>Estimasi: 1-2 hari kerja</p>
+                                <p>Biaya: Rp 50.000 (Jabodetabek), Rp 100.000 (luar Jabodetabek)</p>
+                            </div>
+                            
+                            <div class="shipping-option">
+                                <h4>🏪 Pickup di Store</h4>
+                                <p>Tersedia di Jakarta, Surabaya, Bandung</p>
+                                <p>Gratis, siap dalam 2 jam</p>
+                            </div>
+                        </div>
+
+                        <div class="shipping-policy">
+                            <h4>Kebijakan Pengiriman:</h4>
+                            <ul>
+                                <li>Semua produk diasuransikan selama pengiriman</li>
+                                <li>Packaging premium dengan box eksklusif</li>
+                                <li>Tracking number akan dikirim via email/SMS</li>
+                                <li>Pengiriman hanya hari kerja (Senin-Jumat)</li>
+                                <li>Untuk area terpencil, estimasi +1-2 hari</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Related Products -->
+    <section class="related-products">
+        <div class="container">
+            <h2 class="section-title">Produk Terkait</h2>
+            <div class="related-grid">
+                <div class="related-card">
+                    <div class="card-image">
+                        <img src="https://watchesprime.com/wp-content/uploads/2023/12/ar1701-emporio-armani-watch-men-brown-dial-leather-strap-quartz-battery-analog-chronograph-classic_6.webp" alt="Emporio Armani Classic">
+                    </div>
+                    <div class="card-content">
+                        <h4>Emporio Armani Classic</h4>
+                        <div class="card-price">Rp 8.500.000</div>
+                        <button class="btn btn-sm" onclick="viewProduct(1)">Lihat Detail</button>
+                    </div>
+                </div>
+                
+                <div class="related-card">
+                    <div class="card-image">
+                        <img src="https://tse1.mm.bing.net/th/id/OIP.PtV6Jl918r4RRdIawD7e1gHaHp?w=2652&h=2736&rs=1&pid=ImgDetMain&o=7&rm=3" alt="Rolex Datejust">
+                    </div>
+                    <div class="card-content">
+                        <h4>Rolex Datejust</h4>
+                        <div class="card-price">Rp 320.000.000</div>
+                        <button class="btn btn-sm" onclick="viewProduct(3)">Lihat Detail</button>
+                    </div>
+                </div>
+                
+                <div class="related-card">
+                    <div class="card-image">
+                        <img src="https://ob-watches.com/cdn/shop/products/6_1_1800x1800.png?v=1663156728" alt="Obsyss WWR Aspen">
+                    </div>
+                    <div class="card-content">
+                        <h4>Obsyss WWR Aspen</h4>
+                        <div class="card-price">Rp 12.000.000</div>
+                        <button class="btn btn-sm" onclick="viewProduct(6)">Lihat Detail</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <img src="../assets/logo.png" alt="Luxe Timepieces">
+                        <span>Luxe Timepieces</span>
+                    </div>
+                    <p class="footer-description">
+                        Menghadirkan jam tangan premium dengan kualitas terbaik dan desain yang memukau
+                    </p>
+                </div>
+                
+                <div class="footer-section">
+                    <h4 class="footer-title">Koleksi</h4>
+                    <ul class="footer-links">
+                        <li><a href="#">Classic Series</a></li>
+                        <li><a href="#">Sport Elite</a></li>
+                        <li><a href="#">Luxury Edition</a></li>
+                        <li><a href="#">Limited Edition</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4 class="footer-title">Layanan</h4>
+                    <ul class="footer-links">
+                        <li><a href="#">Garansi</a></li>
+                        <li><a href="#">Perawatan</a></li>
+                        <li><a href="#">Pengiriman</a></li>
+                        <li><a href="#">Konsultasi</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4 class="footer-title">Informasi</h4>
+                    <ul class="footer-links">
+                        <li><a href="#">Tentang Kami</a></li>
+                        <li><a href="#">Kontak</a></li>
+                        <li><a href="#">Kebijakan Privasi</a></li>
+                        <li><a href="#">Syarat & Ketentuan</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2024 Luxe Timepieces. Semua hak dilindungi.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../assets/js/main.js"></script>
+    <script src="../assets/js/product-detail.js"></script>
+</body>
+</html>

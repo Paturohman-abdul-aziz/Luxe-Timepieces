@@ -1,0 +1,34 @@
+# Folder Videos
+
+Folder ini berisi video untuk website Luxe Timepieces.
+
+## Video yang Diperlukan:
+
+### Hero Background
+- `hero-bg.mp4` - Video background untuk hero section
+  - Durasi: 10-30 detik (loop)
+  - Resolusi: 1920x1080 (Full HD)
+  - Format: MP4 (H.264 codec)
+  - Ukuran: Maksimal 5MB untuk performa optimal
+  - Konten: Video jam tangan, workshop, atau abstract luxury
+
+## Tips Video:
+- Gunakan video yang smooth dan tidak terlalu ramai
+- Pastikan video dapat di-loop dengan mulus
+- Kompres video untuk web (gunakan tools seperti HandBrake)
+- Tambahkan fallback image jika video tidak load
+- Pertimbangkan autoplay policy browser modern
+
+## Alternatif Jika Tidak Ada Video:
+Jika tidak memiliki video, Anda dapat:
+1. Gunakan gambar static sebagai background
+2. Hapus tag `<video>` dan gunakan CSS background-image
+3. Gunakan gradient atau pattern sebagai background
+
+## Sumber Video Gratis:
+- Pexels Videos
+- Pixabay Videos
+- Videvo.net
+- Coverr.co
+
+Ganti file placeholder ini dengan video asli sebelum deploy.

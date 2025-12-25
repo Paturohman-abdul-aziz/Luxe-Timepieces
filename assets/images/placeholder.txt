@@ -1,0 +1,37 @@
+# Folder Images
+
+Folder ini berisi semua gambar untuk website Luxe Timepieces.
+
+## Gambar yang Diperlukan:
+
+### Logo & Branding
+- `logo.png` - Logo perusahaan (200x60px, PNG dengan background transparan)
+- `favicon.ico` - Favicon untuk browser (32x32px)
+- `og-image.jpg` - Gambar untuk social media sharing (1200x630px)
+
+### Hero Section
+- `hero-watch.png` - Gambar jam tangan utama untuk hero section (800x800px, PNG dengan background transparan)
+
+### Koleksi Produk
+- `watch-1.jpg` - Classic Series (600x400px, JPG berkualitas tinggi)
+- `watch-2.jpg` - Sport Elite (600x400px, JPG berkualitas tinggi)
+- `watch-3.jpg` - Luxury Edition (600x400px, JPG berkualitas tinggi)
+
+### About Section
+- `craftsman.jpg` - Gambar pengrajin atau workshop (800x600px, JPG berkualitas tinggi)
+
+## Tips Gambar:
+- Gunakan gambar berkualitas tinggi (minimal 72 DPI untuk web)
+- Kompres gambar untuk optimasi loading
+- Format PNG untuk gambar dengan transparansi
+- Format JPG untuk foto produk
+- Pastikan gambar memiliki pencahayaan yang baik
+- Gunakan background yang konsisten untuk produk
+
+## Sumber Gambar Gratis:
+- Unsplash.com
+- Pexels.com
+- Pixabay.com
+- Freepik.com (dengan atribusi)
+
+Ganti file placeholder ini dengan gambar asli sebelum deploy.
